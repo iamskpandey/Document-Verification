@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/facItemCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginTop="24dp"
+    app:cardBackgroundColor="#DEC5C5"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="0dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="11dp">
+
+            <TextView
+                android:id="@+id/tvFDocumentSubmittedBy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Hari"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvFDocumentName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="Marksheet of 12"
+                android:textColor="#0C3C38"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:padding ="10dp"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/tvDocumentImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/baseline_chat_24" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnApprove"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#618F4F"
+                android:text="Approve" />
+            <Button
+                android:id="@+id/btnReject"
+                android:layout_width="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#B02323"
+                android:text="Reject"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

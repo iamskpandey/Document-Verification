@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerifyDocumentActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvDocumentVerificationTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#6C5CE7"
+                android:padding="24dp"
+                android:text="Document Verification"
+                android:textColor="#FFFFFF"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvUploadDocumentTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:paddingHorizontal="16dp"
+                android:text="Upload Document"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/etDocumentTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="24dp"
+                android:hint="Document Title"
+                android:inputType="text"
+                android:padding="16dp"
+                android:textSize="18sp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSelectImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="24dp"
+                android:background="#6C5CE7"
+                android:padding="16dp"
+                android:text="Select Image"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+            <ImageView
+                android:id="@+id/ivSelectedImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop"
+                android:background="#E0E0E0" />
+            <TextView
+                android:id="@+id/tvImagePath"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Image Path: "
+                android:textColor="#000000"
+                android:textSize="16sp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnUploadForVerification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="24dp"
+                android:background="#6C5CE7"
+                android:padding="16dp"
+                android:text="Upload for Verification"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/tvSubmittedDocumentsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:paddingHorizontal="16dp"
+                android:text="Submitted Documents"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:id="@+id/containerCards"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="120dp"
+                android:orientation="vertical">
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="15dp"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <ImageView
+            android:id="@+id/imghome"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_home"
+            android:tint="@color/white" />
+        <ImageView
+            android:id="@+id/imgacd"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_academic"
+            android:tint="@color/white" />
+        <ImageView
+            android:id="@+id/imgchat"
+            android:layout_width="60dp"
+            android:layout_weight="1"
+            android:layout_height="60dp"
+            android:src="@drawable/baseline_chat_24"
+            android:tint="@color/white" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
