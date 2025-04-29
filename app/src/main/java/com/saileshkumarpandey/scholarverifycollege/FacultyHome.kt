@@ -22,6 +22,10 @@ class FacultyHome : AppCompatActivity() {
             val i = Intent(this,VerifyDocFaculty::class.java)
             startActivity(i)
         }
+        chat.setOnClickListener {
+            val i = Intent(this, NotificationView::class.java)
+            startActivity(i)
+        }
 
         val sharedPreferences = getSharedPreferences("user_prefs", MODE_PRIVATE)
         val facultyEmail = sharedPreferences.getString("email", null)

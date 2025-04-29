@@ -20,6 +20,10 @@ class StudentHome : AppCompatActivity() {
             val i = Intent(this,verify_doc_student::class.java)
             startActivity(i)
         }
+        chat.setOnClickListener {
+            val i = Intent(this, NotificationView::class.java)
+            startActivity(i)
+        }
 
         val sharedPreferences = getSharedPreferences("user_prefs", MODE_PRIVATE)
         val studentEmail = sharedPreferences.getString("email", null)

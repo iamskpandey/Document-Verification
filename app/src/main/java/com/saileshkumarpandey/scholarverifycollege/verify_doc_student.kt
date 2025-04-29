@@ -103,6 +103,10 @@ class verify_doc_student : AppCompatActivity() {
             val i = Intent(this,StudentHome::class.java)
             startActivity(i)
         }
+        chat.setOnClickListener {
+            val i = Intent(this, NotificationView::class.java)
+            startActivity(i)
+        }
     }
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)

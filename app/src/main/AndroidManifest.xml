@@ -15,6 +15,9 @@
         android:theme="@style/Theme.ScholarVerifyCollege"
         tools:targetApi="31">
         <activity
+            android:name=".NotificationView"
+            android:exported="false" />
+        <activity
             android:name=".VerifyDocFaculty"
             android:exported="true" />
         <activity

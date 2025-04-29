@@ -367,7 +367,7 @@
             android:layout_width="60dp"
             android:layout_weight="1"
             android:layout_height="60dp"
-            android:src="@drawable/baseline_chat_24"
+            android:src="@drawable/img"
             android:tint="@color/white" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

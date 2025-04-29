@@ -2,29 +2,35 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".VerifyDocFaculty">
+    tools:context=".VerifyDocumentActivity">
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:fillViewport="true">
         <LinearLayout
-            android:id="@+id/llFDocumentContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <TextView
-                android:id="@+id/tvSubmittedDocumentsTitle"
+                android:id="@+id/tvNotification"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="12dp"
-                android:paddingHorizontal="16dp"
-                android:text="Submitted Documents"
+                android:background="#6C5CE7"
+                android:padding="24dp"
+                android:text="Notifications"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp"
-                android:background="@color/primaryColor"
+                android:textSize="28sp"
                 android:textStyle="bold" />
+            <LinearLayout
+                android:id="@+id/notificationCardContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="120dp"
+                android:orientation="vertical">
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
     <LinearLayout
@@ -39,21 +45,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
         <ImageView
-            android:id="@+id/bottom_navigation_home"
+            android:id="@+id/imghome"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_weight="1"
             android:src="@drawable/ic_home"
             android:tint="@color/white" />
         <ImageView
-            android:id="@+id/bottom_navigation_academic"
+            android:id="@+id/imgacd"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_weight="1"
             android:src="@drawable/ic_academic"
             android:tint="@color/white" />
         <ImageView
-            android:id="@+id/bottom_navigation_chat"
+            android:id="@+id/imgchat"
             android:layout_width="60dp"
             android:layout_weight="1"
             android:layout_height="60dp"

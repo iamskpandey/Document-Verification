@@ -24,6 +24,10 @@ class VerifyDocFaculty : AppCompatActivity() {
             val i = Intent(this,FacultyHome::class.java)
             startActivity(i)
         }
+        chat.setOnClickListener {
+            val i = Intent(this, NotificationView::class.java)
+            startActivity(i)
+        }
         val llFDocumentContainer = findViewById<LinearLayout>(R.id.llFDocumentContainer)
         lifecycleScope.launch {
             val documentDao = DatabaseInstance.getDatabase(applicationContext).documentDao()
