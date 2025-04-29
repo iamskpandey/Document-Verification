@@ -93,11 +93,11 @@ class verify_doc_student : AppCompatActivity() {
                     documentDao.insert(document)
                 }
                 Toast.makeText(this@verify_doc_student, "Document uploaded successfully!", Toast.LENGTH_SHORT).show()
+                showSubmittedDocuments()
             }
             tvImagePath.text = "Image Path: "
             ivSelectedImage.setImageResource(0)
             etDocumentTitle.text.clear()
-            showSubmittedDocuments()
         }
         home.setOnClickListener {
             val i = Intent(this,StudentHome::class.java)
